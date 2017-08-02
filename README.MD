@@ -60,4 +60,4 @@ Una volta importata la libreria, puoi usare le icone nel modo seguente:
 <tb-icon icon="erp-summary"></tb-icon>
 ```
 
-L'elenco completo delle icone finora incluse nella libreria lo trovi a questa [pagina](http://microarea.github.io/)
+L'elenco completo delle icone finora incluse nella libreria lo trovi a questa [pagina](https://microarea.github.io/ng-icons/)
