@@ -1,46 +1,46 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common')) :
 	typeof define === 'function' && define.amd ? define(['exports', '@angular/core', '@angular/common'], factory) :
-	(factory((global['taskbuilder-icons'] = {}),global._angular_core,global._angular_common));
-}(this, (function (exports,_angular_core,_angular_common) { 'use strict';
+	(factory((global['taskbuilder-icons'] = {}),global.core,global.common));
+}(this, (function (exports,core,common) { 'use strict';
 
-var M4IconComponent = (function () {
+var M4IconComponent = /** @class */ (function () {
     function M4IconComponent() {
         this.icon = '';
     }
+    M4IconComponent.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'm4-icon',
+                    styles: [""],
+                    template: "<i class=\"m4-icon m4-{{icon}}\"></i>"
+                },] },
+    ];
+    /**
+     * @nocollapse
+     */
+    M4IconComponent.ctorParameters = function () { return []; };
+    M4IconComponent.propDecorators = {
+        'icon': [{ type: core.Input, args: ['icon',] },],
+    };
     return M4IconComponent;
 }());
-M4IconComponent.decorators = [
-    { type: _angular_core.Component, args: [{
-                selector: 'm4-icon',
-                styles: [""],
-                template: "<i class=\"m4-icon m4-{{icon}}\"></i>"
-            },] },
-];
-/**
- * @nocollapse
- */
-M4IconComponent.ctorParameters = function () { return []; };
-M4IconComponent.propDecorators = {
-    'icon': [{ type: _angular_core.Input, args: ['icon',] },],
-};
 
-var TbIconsModule = (function () {
+var TbIconsModule = /** @class */ (function () {
     function TbIconsModule() {
     }
+    TbIconsModule.decorators = [
+        { type: core.NgModule, args: [{
+                    imports: [common.CommonModule],
+                    declarations: [M4IconComponent],
+                    exports: [M4IconComponent]
+                },] },
+    ];
+    /**
+     * @nocollapse
+     */
+    TbIconsModule.ctorParameters = function () { return []; };
     return TbIconsModule;
 }());
-TbIconsModule.decorators = [
-    { type: _angular_core.NgModule, args: [{
-                imports: [_angular_common.CommonModule],
-                declarations: [M4IconComponent],
-                exports: [M4IconComponent]
-            },] },
-];
-/**
- * @nocollapse
- */
-TbIconsModule.ctorParameters = function () { return []; };
 
 exports.TbIconsModule = TbIconsModule;
 exports.M4IconComponent = M4IconComponent;
