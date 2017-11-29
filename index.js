@@ -1,11 +1,7 @@
 import { Component, Input, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
- */
-var M4IconComponent = (function () {
+var M4IconComponent = /** @class */ (function () {
     function M4IconComponent() {
         this.icon = '';
     }
@@ -16,19 +12,17 @@ var M4IconComponent = (function () {
                     template: "<i class=\"m4-icon m4-{{icon}}\"></i>"
                 },] },
     ];
-    /** @nocollapse */
+    /**
+     * @nocollapse
+     */
     M4IconComponent.ctorParameters = function () { return []; };
     M4IconComponent.propDecorators = {
-        "icon": [{ type: Input, args: ['icon',] },],
+        'icon': [{ type: Input, args: ['icon',] },],
     };
     return M4IconComponent;
 }());
 
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
- */
-var TbIconsModule = (function () {
+var TbIconsModule = /** @class */ (function () {
     function TbIconsModule() {
     }
     TbIconsModule.decorators = [
@@ -38,7 +32,9 @@ var TbIconsModule = (function () {
                     exports: [M4IconComponent]
                 },] },
     ];
-    /** @nocollapse */
+    /**
+     * @nocollapse
+     */
     TbIconsModule.ctorParameters = function () { return []; };
     return TbIconsModule;
 }());
