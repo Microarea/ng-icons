@@ -38,8 +38,6 @@ var TbIconsModule = (function () {
                     exports: [M4IconComponent]
                 },] },
     ];
-    /** @nocollapse */
-    TbIconsModule.ctorParameters = function () { return []; };
     return TbIconsModule;
 }());
 
